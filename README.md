@@ -1,24 +1,20 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# RSpecを使用したテスト
+ - RSpecはRubyやRailsの代表的なテストツール。クラスやメソッド単位でテストすることが可能。
+ - コマンド1つで何度でもテストを実行できる
+ 
+# 重要な構文
+ ## expect
+  ### 検証を実行するためのメソッド
+ - expect(実行結果).to 期待する結果
+ - expect(実行結果).not_to 期待する結果
+ 
+ ### 例
+ - expect(1 + 2).to eq
+ 
+ 1+2の結果が3と等しい場合がテスト成功
+ 
+ - expect(1 + 2).not_to eq 4
+ 
+ 1+2の結果が4と異なる場合はテスト成功
+ 
+## matcher
